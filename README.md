@@ -1,4 +1,4 @@
-ChronoBridge: AI-Powered SIEM & Live Threat Mapping
+ChronoBreach: AI-Powered SIEM & Live Threat Mapping
 
 ChronoBreach is a full-stack, AI-driven Security Information and Event Management (SIEM) pipeline. It actively ingests raw Windows endpoint telemetry, processes it through a custom FastAPI backend, and utilizes Retrieval-Augmented Generation (RAG) with LLaMA 3-70B (via Groq) to dynamically reconstruct multi-stage cyber attacks into a visual, interactive node graph in real-time.
 
