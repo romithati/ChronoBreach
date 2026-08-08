@@ -12,3 +12,7 @@ build/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Ignore Exploit-DB and all databases
+*.csv
+backend/files_exploits.csv
