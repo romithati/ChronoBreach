@@ -1,0 +1,14 @@
+# Environments & Secrets
+.env
+venv/
+__pycache__/
+
+# Next.js & Node
+node_modules/
+.next/
+out/
+build/
+
+# OS Files
+.DS_Store
+Thumbs.db
