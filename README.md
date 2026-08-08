@@ -1,8 +1,8 @@
-BonoBridge: AI-Powered SIEM & Live Threat Mapping
+ChronoBridge: AI-Powered SIEM & Live Threat Mapping
 
-BonoBridge (formerly ChronoBreach) is a full-stack, AI-driven Security Information and Event Management (SIEM) pipeline. It actively ingests raw Windows endpoint telemetry, processes it through a custom FastAPI backend, and utilizes Retrieval-Augmented Generation (RAG) with LLaMA 3-70B (via Groq) to dynamically reconstruct multi-stage cyber attacks into a visual, interactive node graph in real-time.
+ChronoBreach is a full-stack, AI-driven Security Information and Event Management (SIEM) pipeline. It actively ingests raw Windows endpoint telemetry, processes it through a custom FastAPI backend, and utilizes Retrieval-Augmented Generation (RAG) with LLaMA 3-70B (via Groq) to dynamically reconstruct multi-stage cyber attacks into a visual, interactive node graph in real-time.
 
-## System Architecture
+System Architecture
 This project simulates a real-world enterprise telemetry pipeline, bypassing local network restrictions and cross-referencing live logs with day-zero vulnerability databases.
 
 1. Endpoint Telemetry (Victim): Windows Sysmon tracks kernel-level process executions, file staging, and network beacons.
